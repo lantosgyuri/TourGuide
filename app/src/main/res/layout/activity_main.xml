@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <com.github.florent37.bubbletab.BubbleTab
+       android:id="@+id/bubbleTab"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clipToPadding="false"
+       android:background="@android:color/white"
+       android:elevation="10dp"
+
+       app:bubbleTab_circleColor="@color/colorPrimary"
+       app:bubbleTab_circleRatio="1.25"
+       >
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          style="@style/tabLayoutPadding"
+          android:src="@drawable/ic_star_borde" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          style="@style/tabLayoutPadding"
+          android:text="Indoor" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          style="@style/tabLayoutPadding"
+          android:text="Outdoor" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          style="@style/tabLayoutPadding"
+          android:text="Restaurants" />
+
+
+   </com.github.florent37.bubbletab.BubbleTab>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewPager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</LinearLayout>
