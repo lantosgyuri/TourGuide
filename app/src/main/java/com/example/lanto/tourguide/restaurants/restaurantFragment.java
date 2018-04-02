@@ -17,6 +17,15 @@ public class restaurantFragment extends Fragment {
 
     private ArrayList<restaurantPojo> restaurantPojos;
 
+    private static final String IlCastelloUrl = "http://www.ilcastello-nesselwang.com/";
+    private static final String WildbachUrl = "http://www.wildbachalm.de/";
+    private static final String KronenHutteUrl = "https://www.kronenhuette.de/";
+    private static final String GasthofBarenUrl = "http://baeren-nesselwang.de/";
+    private static final String LiftStubeUrl = "https://goo.gl/J4DpeK";
+    private static final String GrillhouseUrl = "https://www.grillhouse-sonnenbichl.de/";
+    private static final String KappelerUrl = "https://www.kappeleralp.de/";
+
+
 
     @Nullable
     @Override
@@ -25,17 +34,16 @@ public class restaurantFragment extends Fragment {
 
         ListView listView = rootView.findViewById(R.id.list_fragment_listView);
 
-        //fill the Indoor array list
+        //fill the restaurant array list
 
         restaurantPojos = new ArrayList<restaurantPojo>();
-        restaurantPojos.add(new restaurantPojo("Pizzeria Il Castello ", "Pizzeria, Restaurant",
-                "http://www.ilcastello-nesselwang.com/", 5));
-        restaurantPojos.add(new restaurantPojo("Wildbach-Alm", "Restaurant", "http://www.wildbachalm.de/", 3));
-        restaurantPojos.add(new restaurantPojo("Kronenhütte", "Berghütte", "https://www.kronenhuette.de/", 4));
-        restaurantPojos.add(new restaurantPojo("Gasthof Bären", "Brauerei", "http://baeren-nesselwang.de/", 3));
-        restaurantPojos.add(new restaurantPojo("LiftStüble", "Restaurant", "https://goo.gl/J4DpeK", 2));
-        restaurantPojos.add(new restaurantPojo("Grillhouse Sonnenbichl", "Grillhouse", "https://www.grillhouse-sonnenbichl.de/", 4));
-        restaurantPojos.add(new restaurantPojo("Kappeler Alp", "Berghütte", "https://www.kappeleralp.de/", 4));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.IlCastello), getString(R.string.pizzeria_restaurant), IlCastelloUrl, 5));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.Wildbach), getString(R.string.restaurant), WildbachUrl, 3));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.Kronenhutte), getString(R.string.berghutte), KronenHutteUrl, 4));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.GastHof_baren), getString(R.string.restaurant), GasthofBarenUrl, 3));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.Liftstube), getString((R.string.restaurant)), LiftStubeUrl, 2));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.Grillhouse), getString(R.string.grillhouse), GrillhouseUrl, 4));
+        restaurantPojos.add(new restaurantPojo(getString(R.string.Kappeler_alp), getString(R.string.berghutte), KappelerUrl, 4));
 
         restaurantAdapter adapter = new restaurantAdapter(getContext(), restaurantPojos);
 

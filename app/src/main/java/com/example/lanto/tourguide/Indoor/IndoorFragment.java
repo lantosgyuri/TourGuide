@@ -16,6 +16,14 @@ import java.util.ArrayList;
 public class IndoorFragment extends Fragment {
 
     private ArrayList<IndoorPojo> inDoorList;
+    private static final String AllgulinoUrl = "http://www.allgaeulino.de/";
+    private static final String CamboMareUrl = "https://www.cambomare.de/";
+    private static final String LinaLauneUrl = "https://linalauneland.de/";
+    private static final String GolfArenaUrl = "http://www.golfarena-allgaeu.de/";
+    private static final String AbcNesUrl = "http://www.abc-nesselwang.de/";
+    private static final String SchmetUrl = "https://www.schmetterling-erlebniswelt.de/";
+    private static final String HeimathausUrl = "http://www.nesselwang-buergerservice.de/heimathaus.0.html";
+
 
 
     @Nullable
@@ -28,13 +36,13 @@ public class IndoorFragment extends Fragment {
         //fill the Indoor array list
 
         inDoorList = new ArrayList<IndoorPojo>();
-        inDoorList.add(new IndoorPojo(getString(R.string.allgolino_wertach), getString(R.string.indoorspielplatz), "http://www.allgaeulino.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.CamboMare), getString(R.string.hallenbad_sauna), "https://www.cambomare.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.Lina_laune), getString(R.string.indoorspielplatz), "https://linalauneland.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.golfarena), getString(R.string.hallengolfplatz), "http://www.golfarena-allgaeu.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.Abc_nes), getString(R.string.erlebnisbad), "http://www.abc-nesselwang.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.schmetterling), getString(R.string.zoo_pfronten), "https://www.schmetterling-erlebniswelt.de/"));
-        inDoorList.add(new IndoorPojo(getString(R.string.heimathaus), getString(R.string.museum_nes), "http://www.nesselwang-buergerservice.de/heimathaus.0.html"));
+        inDoorList.add(new IndoorPojo(getString(R.string.allgolino_wertach), getString(R.string.indoorspielplatz), AllgulinoUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.CamboMare), getString(R.string.hallenbad_sauna), CamboMareUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.Lina_laune), getString(R.string.indoorspielplatz), LinaLauneUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.golfarena), getString(R.string.hallengolfplatz), GolfArenaUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.Abc_nes), getString(R.string.erlebnisbad), AbcNesUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.schmetterling), getString(R.string.zoo_pfronten), SchmetUrl));
+        inDoorList.add(new IndoorPojo(getString(R.string.heimathaus), getString(R.string.museum_nes), HeimathausUrl));
 
         indoorAdapter adapter = new indoorAdapter(getActivity(),inDoorList);
 

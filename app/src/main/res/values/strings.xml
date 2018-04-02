@@ -3,23 +3,61 @@
     <string name="recommend_weather_textView">We recommend these Programs, because the wetter today is:</string>
     <string name="warning_internet_connection">Sorry, you have no internet connection</string>
 
+
     <string name="recommend_category">Recommended</string>
     <string name="indoor_category">Indoor</string>
     <string name="outdoor_category">Outdoor</string>
     <string name="restaurant_category">Restaurants</string>
+
     <string name="allgolino_wertach">Allgäulino Wertach</string>
     <string name="indoorspielplatz">Indoorspielplatz</string>
+
     <string name="CamboMare">CamboMare Hallenbad</string>
     <string name="hallenbad_sauna">Hallenbad und Sauna</string>
+
     <string name="Lina_laune">Lina Laune Land</string>
+
     <string name="golfarena">GolfArena Allgäu</string>
     <string name="hallengolfplatz">Hallengolfplatz</string>
+
     <string name="Abc_nes">ABC Nesselwang</string>
     <string name="erlebnisbad">Erlebnisbad</string>
+
     <string name="schmetterling">Allgäuer Schmetterling</string>
     <string name="zoo_pfronten">Zoo in Pfronten</string>
+
     <string name="heimathaus">Heimathaus</string>
     <string name="museum_nes">Museum in Nesselwang</string>
+
     <string name="wetter_not_nice">The wetter today is not nice, we suggest indoor programs</string>
     <string name="weather_nice">The wetter today is nice, we suggest for you these tours</string>
+
+    <string name="kapf">Kapf</string>
+    <string name="guggersee">Guggersee</string>
+    <string name="breitenberg">Breitenberg</string>
+    <string name="alpspitz">Alpspitz</string>
+    <string name="aggenstein">Aggenstein</string>
+    <string name="falkenstein">Falkenstein</string>
+    <string name="sonnenkopf">Sonnenkopf</string>
+
+    <string name="kapf_meter">1160 m</string>
+    <string name="giggersee_meter">1702 m</string>
+    <string name="breitenberg_meter">1884 m</string>
+    <string name="alpspitz_meter">1450 m</string>
+    <string name="aggenstein_meter">1890 m</string>
+    <string name="falkenstein_meter">1091 m</string>
+    <string name="sonnenkopf_meter">1712 m</string>
+
+    <string name="IlCastello">Pizzeria Il Castello</string>
+    <string name="Wildbach">Wildbach-Alm</string>
+    <string name="Kronenhutte">Kronenhütte</string>
+    <string name="GastHof_baren">Gasthof Bären</string>
+    <string name="Liftstube">LiftStüble</string>
+    <string name="Grillhouse">Grillhouse Sonnenbichl</string>
+    <string name="Kappeler_alp">Kappeler Alp</string>
+
+    <string name="pizzeria_restaurant">Pizzeria, Restaurant</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="berghutte">Berghütte</string>
+    <string name="grillhouse">Grillhouse</string>
 </resources>
