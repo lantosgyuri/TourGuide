@@ -26,21 +26,22 @@ public class Presenter implements Contract.getRecommendedList {
          */
 
         outDoorList = new ArrayList<outdoorPojo>();
-        outDoorList.add(new outdoorPojo("Kapf", "1160 m", R.drawable.kapf));
-        outDoorList.add(new outdoorPojo("Guggersee", "1702 m", R.drawable.guggersee));
-        outDoorList.add(new outdoorPojo("Breitenberg", "1884 m", R.drawable.breitenberg));
-        outDoorList.add(new outdoorPojo("Alpspitz", "1450 m", R.drawable.alpspitz));
-        outDoorList.add(new outdoorPojo("Aggenstein", "1890 m", R.drawable.aggenstein));
-        outDoorList.add(new outdoorPojo("Falkenstein", "1091 m", R.drawable.falkenstein));
-        outDoorList.add(new outdoorPojo("Sonnenkopf", "1712 m", R.drawable.sonnenkpof));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.kapf), context.getString(R.string.kapf_meter), R.drawable.kapf));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.guggersee), context.getString(R.string.giggersee_meter), R.drawable.guggersee));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.breitenberg), context.getString(R.string.breitenberg_meter), R.drawable.breitenberg));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.alpspitz), context.getString(R.string.alpspitz_meter), R.drawable.alpspitz));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.aggenstein), context.getString(R.string.aggenstein_meter), R.drawable.aggenstein));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.falkenstein), context.getString(R.string.falkenstein_meter), R.drawable.falkenstein));
+        outDoorList.add(new outdoorPojo(context.getString(R.string.sonnenkopf), context.getString(R.string.sonnenkopf_meter), R.drawable.sonnenkpof));
 
         inDoorList = new ArrayList<IndoorPojo>();
-        inDoorList.add(new IndoorPojo(context.getString(R.string.allgolino_wertach), context.getString(R.string.indoorspielplatz), "http://www.allgaeulino.de/"));
-        inDoorList.add(new IndoorPojo(context.getString(R.string.CamboMare), context.getString(R.string.hallenbad_sauna), "https://www.cambomare.de/"));
-        inDoorList.add(new IndoorPojo(context.getString(R.string.Lina_laune), context.getString(R.string.hallengolfplatz), "http://www.golfarena-allgaeu.de/"));
-        inDoorList.add(new IndoorPojo(context.getString(R.string.Abc_nes), context.getString(R.string.erlebnisbad), "http://www.abc-nesselwang.de/"));
-        inDoorList.add(new IndoorPojo(context.getString(R.string.schmetterling), context.getString(R.string.zoo_pfronten), "https://www.schmetterling-erlebniswelt.de/"));
-        inDoorList.add(new IndoorPojo(context.getString(R.string.heimathaus), context.getString(R.string.museum_nes), "http://www.nesselwang-buergerservice.de/heimathaus.0.html"));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.allgolino_wertach)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.CamboMare)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.Lina_laune)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.golfarena)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.Abc_nes)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.schmetterling)));
+        inDoorList.add(new IndoorPojo(context.getString(R.string.heimathaus)));
     }
 
 

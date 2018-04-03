@@ -12,6 +12,10 @@ public class IndoorPojo {
         this.url = url;
     }
 
+    public IndoorPojo(String title){
+        this.title = title;
+    }
+
     public String getUrl() {
         return url;
     }
